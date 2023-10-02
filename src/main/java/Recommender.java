@@ -86,8 +86,6 @@ public class Recommender {
 
             List<RecommendedItem> recommendations = recommender.recommend(672, 5);
 
-            System.out.print(recommendations);
-
             for (RecommendedItem recommendation : recommendations) {
                 System.out.println("Recommended Movie ID: " + recommendation.getItemID() + ", Score: " + recommendation.getValue());
             }
